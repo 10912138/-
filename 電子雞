@@ -1,0 +1,644 @@
+import time
+import random
+from random import choice
+local_time = time.localtime() 
+timeString = time.strftime("%Y/%m/%d %H:%M", local_time)
+x=0
+class Cat():
+    def __init__(self,sleep,eat,play,love,pee,fart,poo):
+        self.Eat=eat
+        self.Sleep=sleep
+        self.Play=play
+        self.Love=love
+        self.Pee=pee
+        self.Fart=fart
+        self.Poo=poo
+    def eat(self):
+        if B.Eat<0:
+            print('再不讓我吃阿!!腰腰死了齁')
+            print('死亡時間:',timeString)
+            while True:
+                x+=1
+        elif B.Eat<17:
+            B.Eat+=15
+            B.Sleep-=random.randrange(2,8)
+            B.Play-=random.randrange(2,8)
+            B.Love-=random.randrange(2,8)
+            B.Pee-=random.randrange(2,8)
+            B.Fart-=random.randrange(2,8)
+            B.Poo-=random.randrange(2,8)
+            print('吃飽了~~舒服><')
+        else:
+            B.Eat-=random.randrange(3)
+            B.Sleep-=random.randrange(3)
+            B.Play-=random.randrange(3)
+            B.Love-=random.randrange(3)
+            B.Pee-=random.randrange(3)
+            B.Fart-=random.randrange(3)
+            B.Poo-=random.randrange(3)
+            print('吃飽了~~舒服><')
+        if B.Sleep<0:
+            print('在不讓我睡啊!死了齁')
+            print('死亡時間:',timeString)
+            while True:
+                x+=1
+        elif B.Sleep<17:
+            print('好想睡喔~~趕快讓我睡覺吧')
+        else:
+            print('睡得很飽歐!又有精神了!')
+        if B.Play<0:
+            print('再不陪我玩啊!!害我得抑鬱症死了..')
+            print('死亡時間:',timeString)
+            while True:
+                x+=1
+        elif B.Play<17:
+            print('我.好.無.聊，陪我玩!')
+        else :
+            print('謝謝你陪我玩~我很開心喔!')
+        if B.Love<0:
+            print('被甩了..好難過..毀滅吧..')
+            print('死亡時間:',timeString)
+            while True:
+                x+=1
+        elif B.Love<17:
+            print('我想讓那頭母雞下蛋~~')
+        else:
+            print('YA!我成功讓她下蛋了')
+        if B.Pee<0:
+            print('在不讓我尿啊!!害我膀胱發炎死了齁')
+            print('死亡時間:',timeString)
+            while True:
+                x+=1
+        elif B.Pee<17:
+            print('我想尿尿，趕快帶我上廁所!')
+        else:
+            print('我不想尿尿~~')
+        if B.Fart<0:
+            print('你為什麼不讓我放屁!害我脹死了...')
+            print('死亡時間:',timeString)
+            while True:
+                x+=1
+        elif B.Fart<17:
+            print('大哥!我想放屁，該放一下了吧!')
+        else :
+            print('保持身體好，天天都美好!')
+        if B.Poo<0:
+            print('好丟臉喔!竟然便祕死了...')
+            print('死亡時間:',timeString)
+            while True:
+                x+=1
+        elif B.Poo<17:
+            print('我快拉出來了!!趕快讓我解放!!')
+        else:
+            print('腸胃清的好，快樂又逍遙!')
+
+    def sleep(self):
+        if B.Eat<0:
+            print('再不讓我吃阿!!腰腰死了齁')
+            print('死亡時間:',timeString)
+            while True:
+                x+=1
+        elif B.Eat<17:
+            print('我好餓喔!該給我吃東西了吧!')
+        else:
+            print('吃飽了~~舒服><')
+        if B.Sleep<0:
+            print('在不讓我睡啊!死了齁')
+            print('死亡時間:',timeString)
+            while True:
+                x+=1
+        elif B.Sleep<17:
+            B.Eat-=random.randrange(2,8)
+            B.Sleep+=15
+            B.Play-=random.randrange(2,8)
+            B.Love-=random.randrange(2,8)
+            B.Pee-=random.randrange(2,8)
+            B.Fart-=random.randrange(2,8)
+            B.Poo-=random.randrange(2,8)
+            print('睡得很飽歐!又有精神了!')
+        else:
+            B.Eat-=random.randrange(3)
+            B.Sleep-=random.randrange(3)
+            B.Play-=random.randrange(3)
+            B.Love-=random.randrange(3)
+            B.Pee-=random.randrange(3)
+            B.Fart-=random.randrange(3)
+            B.Poo-=random.randrange(3)
+            print('睡得很飽歐!又有精神了!')
+        if B.Play<0:
+            print('再不陪我玩啊!!害我得抑鬱症死了..')
+            print('死亡時間:',timeString)
+            while True:
+                x+=1
+        elif B.Play<17:
+            print('我.好.無.聊，陪我玩!')
+        else :
+            print('謝謝你陪我玩~我很開心喔!')
+        if B.Love<0:
+            print('被甩了..好難過..毀滅吧..')
+            print('死亡時間:',timeString)
+            while True:
+                x+=1
+        elif B.Love<17:
+            print('我想讓那頭母雞下蛋~~')
+        else:
+            print('YA!我成功讓她下蛋了')
+        if B.Pee<0:
+            print('在不讓我尿啊!!害我膀胱發炎死了齁')
+            print('死亡時間:',timeString)
+            while True:
+                x+=1
+        elif B.Pee<17:
+            print('我想尿尿，趕快帶我上廁所!')
+        else:
+            print('我不想尿尿~~')
+        if B.Fart<0:
+            print('你為什麼不讓我放屁!害我脹死了...')
+            print('死亡時間:',timeString)
+            while True:
+                x+=1
+        elif B.Fart<17:
+            print('大哥!我想放屁，該放一下了吧!')
+        else :
+            print('保持身體好，天天都美好!')
+        if B.Poo<0:
+            print('好丟臉喔!竟然便祕死了...')
+            print('死亡時間:',timeString)
+            while True:
+                x+=1
+        elif B.Poo<17:
+            print('我快拉出來了!!趕快讓我解放!!')
+        else:
+            print('腸胃清的好，快樂又逍遙!')
+    def play(self):
+        if B.Eat<0:
+            print('再不讓我吃阿!!腰腰死了齁')
+            print('死亡時間:',timeString)
+            while True:
+                x+=1
+        elif B.Eat<17:
+            print('我好餓喔!該給我吃東西了吧!')
+        else:
+            print('吃飽了~~舒服><')
+        if B.Sleep<0:
+            print('在不讓我睡啊!死了齁')
+            print('死亡時間:',timeString)
+            while True:
+                x+=1
+        elif B.Sleep<17:
+            print('好想睡喔~~趕快讓我睡覺吧')
+        else:
+            print('睡得很飽歐!又有精神了!')
+        if B.Play<0:
+            print('再不陪我玩啊!!害我得抑鬱症死了..')
+            print('死亡時間:',timeString)
+            while True:
+                x+=1
+        elif B.Play<17:
+            B.Eat-=random.randrange(2,8)
+            B.Sleep-=random.randrange(2,8)
+            B.Play+=15
+            B.Love-=random.randrange(2,8)
+            B.Pee-=random.randrange(2,8)
+            B.Fart-=random.randrange(2,8)
+            print('謝謝你陪我玩~我很開心喔!')
+        else :
+            B.Eat-=random.randrange(3)
+            B.Sleep-=random.randrange(3)
+            B.Play-=random.randrange(3)
+            B.Love-=random.randrange(3)
+            B.Pee-=random.randrange(3)
+            B.Fart-=random.randrange(3)
+            B.Poo-=random.randrange(3)
+            print('謝謝你陪我玩~我很開心喔!')
+            
+        if B.Love<0:
+            print('被甩了..好難過..毀滅吧..')
+            print('死亡時間:',timeString)
+            while True:
+                x+=1
+        elif B.Love<17:
+            print('我想讓那頭母雞下蛋~~')
+        else:
+            print('YA!我成功讓她下蛋了')
+        if B.Pee<0:
+            print('在不讓我尿啊!!害我膀胱發炎死了齁')
+            print('死亡時間:',timeString)
+            while True:
+                x+=1
+        elif B.Pee<17:
+            print('我想尿尿，趕快帶我上廁所!')
+        else:
+            print('我不想尿尿~~')
+        if B.Fart<0:
+            print('你為什麼不讓我放屁!害我脹死了...')
+            print('死亡時間:',timeString)
+            while True:
+                x+=1
+        elif B.Fart<17:
+            print('大哥!我想放屁，該放一下了吧!')
+        else :
+            print('保持身體好，天天都美好!')
+        if B.Poo<0:
+            print('好丟臉喔!竟然便祕死了...')
+            print('死亡時間:',timeString)
+            while True:
+                x+=1
+        elif B.Poo<17:
+            print('我快拉出來了!!趕快讓我解放!!')
+        else:
+            print('腸胃清的好，快樂又逍遙!')
+    def love(self):
+        if B.Eat<0:
+            print('再不讓我吃阿!!腰腰死了齁')
+            print('死亡時間:',timeString)
+            while True:
+                x+=1
+        elif B.Eat<17:
+            print('我好餓喔!該給我吃東西了吧!')
+        else:
+            print('吃飽了~~舒服><')
+        if B.Sleep<0:
+            print('在不讓我睡啊!死了齁')
+            print('死亡時間:',timeString)
+            while True:
+                x+=1
+        elif B.Sleep<17:
+            print('好想睡喔~~趕快讓我睡覺吧')
+        else:
+            print('睡得很飽歐!又有精神了!')
+        if B.Play<0:
+            print('再不陪我玩啊!!害我得抑鬱症死了..')
+            print('死亡時間:',timeString)
+            while True:
+                x+=1
+        elif B.Play<17:
+            print('我.好.無.聊，陪我玩!')
+        else :
+            print('謝謝你陪我玩~我很開心喔!')
+        if B.Love<0:
+            print('被甩了..好難過..毀滅吧..')
+            print('死亡時間:',timeString)
+            while True:
+                x+=1
+        elif B.Love<17:
+            B.Eat-=random.randrange(2,8)
+            B.Sleep-=random.randrange(2,8)
+            B.Play-=random.randrange(2,8)
+            B.Love+=15
+            B.Pee-=random.randrange(2,8)
+            B.Fart-=random.randrange(2,8)
+            B.Poo-=random.randrange(2,8)
+            print('YA!我成功讓她下蛋了')
+        else:
+            B.Eat-=random.randrange(3)
+            B.Sleep-=random.randrange(3)
+            B.Play-=random.randrange(3)
+            B.Love-=random.randrange(3)
+            B.Pee-=random.randrange(3)
+            B.Fart-=random.randrange(3)
+            B.Poo-=random.randrange(3)
+            print('YA!我成功讓她下蛋了')
+        if B.Pee<0:
+            print('在不讓我尿啊!!害我膀胱發炎死了齁')
+            print('死亡時間:',timeString)
+            while True:
+                x+=1
+        elif B.Pee<17:
+            print('我想尿尿，趕快帶我上廁所!')
+        else:
+            print('我不想尿尿~~')
+        if B.Fart<0:
+            print('你為什麼不讓我放屁!害我脹死了...')
+            print('死亡時間:',timeString)
+            while True:
+                x+=1
+        elif B.Fart<17:
+            print('大哥!我想放屁，該放一下了吧!')
+        else :
+            print('保持身體好，天天都美好!')
+        if B.Poo<0:
+            print('好丟臉喔!竟然便祕死了...')
+            print('死亡時間:',timeString)
+            while True:
+                x+=1
+        elif B.Poo<17:
+            print('我快拉出來了!!趕快讓我解放!!')
+        else:
+            print('腸胃清的好，快樂又逍遙!')
+    def pee(self):
+        if B.Eat<0:
+            print('再不讓我吃阿!!腰腰死了齁')
+            print('死亡時間:',timeString)
+            while True:
+                x+=1
+        elif B.Eat<17:
+            print('我好餓喔!該給我吃東西了吧!')
+        else:
+            print('吃飽了~~舒服><')
+        if B.Sleep<0:
+            print('在不讓我睡啊!死了齁')
+            print('死亡時間:',timeString)
+            while True:
+                x+=1
+        elif B.Sleep<17:
+            print('好想睡喔~~趕快讓我睡覺吧')
+        else:
+            print('睡得很飽歐!又有精神了!')
+        if B.Play<0:
+            print('再不陪我玩啊!!害我得抑鬱症死了..')
+            print('死亡時間:',timeString)
+            while True:
+                x+=1
+        elif B.Play<17:
+            print('我.好.無.聊，陪我玩!')
+        else :
+            print('謝謝你陪我玩~我很開心喔!')
+        if B.Love<0:
+            print('被甩了..好難過..毀滅吧..')
+            print('死亡時間:',timeString)
+            while True:
+                x+=1
+        elif B.Love<17:
+            print('我想讓那頭母雞下蛋~~')
+        else:
+            print('YA!我成功讓她下蛋了')
+        if B.Pee<0:
+            print('在不讓我尿啊!!害我膀胱發炎死了齁')
+            print('死亡時間:',timeString)
+            while True:
+                x+=1
+        elif B.Pee<17:
+            B.Eat-=random.randrange(2,8)
+            B.Sleep-=random.randrange(2,8)
+            B.Play-=random.randrange(2,8)
+            B.Love-=random.randrange(2,8)
+            B.Pee+=15
+            B.Fart-=random.randrange(2,8)
+            B.Poo-=random.randrange(2,8)
+            print('我不想尿尿~~')
+        else:
+            B.Eat-=random.randrange(3)
+            B.Sleep-=random.randrange(3)
+            B.Play-=random.randrange(3)
+            B.Love-=random.randrange(3)
+            B.Pee-=random.randrange(3)
+            B.Fart-=random.randrange(3)
+            B.Poo-=random.randrange(3)
+            print('我不想尿尿~~')
+        if B.Fart<0:
+            print('你為什麼不讓我放屁!害我脹死了...')
+            print('死亡時間:',timeString)
+            while True:
+                x+=1
+        elif B.Fart<17:
+            print('大哥!我想放屁，該放一下了吧!')
+        else :
+            print('保持身體好，天天都美好!')
+        if B.Poo<0:
+            print('好丟臉喔!竟然便祕死了...')
+            print('死亡時間:',timeString)
+            while True:
+                x+=1
+        elif B.Poo<17:
+            print('我快拉出來了!!趕快讓我解放!!')
+        else:
+            print('腸胃清的好，快樂又逍遙!')
+    def fart(self):
+        if B.Eat<0:
+            print('再不讓我吃阿!!腰腰死了齁')
+            print('死亡時間:',timeString)
+            while True:
+                x+=1
+        elif B.Eat<17:
+            print('我好餓喔!該給我吃東西了吧!')
+        else:
+            print('吃飽了~~舒服><')
+        if B.Sleep<0:
+            print('在不讓我睡啊!死了齁')
+            print('死亡時間:',timeString)
+            while True:
+                x+=1
+        elif B.Sleep<17:
+            print('好想睡喔~~趕快讓我睡覺吧')
+        else:
+            print('睡得很飽歐!又有精神了!')
+        if B.Play<0:
+            print('再不陪我玩啊!!害我得抑鬱症死了..')
+            print('死亡時間:',timeString)
+            while True:
+                x+=1
+        elif B.Play<17:
+            print('我.好.無.聊，陪我玩!')
+        else :
+            print('謝謝你陪我玩~我很開心喔!')
+        if B.Love<0:
+            print('被甩了..好難過..毀滅吧..')
+            print('死亡時間:',timeString)
+            while True:
+                x+=1
+        elif B.Love<17:
+            print('我想讓那頭母雞下蛋~~')
+        else:
+            print('YA!我成功讓她下蛋了')
+        if B.Pee<0:
+            print('在不讓我尿啊!!害我膀胱發炎死了齁')
+            print('死亡時間:',timeString)
+            while True:
+                x+=1
+        elif B.Pee<17:
+            print('我想尿尿，趕快帶我上廁所!')
+        else:
+            print('我不想尿尿~~')
+        if B.Fart<0:
+            print('你為什麼不讓我放屁!害我脹死了...')
+            print('死亡時間:',timeString)
+            while True:
+                x+=1
+        elif B.Fart<17:
+            B.Eat-=random.randrange(2,8)
+            B.Sleep-=random.randrange(2,8)
+            B.Play-=random.randrange(2,8)
+            B.Love-=random.randrange(2,8)
+            B.Pee-=random.randrange(2,8)
+            B.Fart+=15
+            B.Poo-=random.randrange(2,8)
+            print('保持身體好，天天都美好!')
+        else :
+            B.Eat-=random.randrange(3)
+            B.Sleep-=random.randrange(3)
+            B.Play-=random.randrange(3)
+            B.Love-=random.randrange(3)
+            B.Pee-=random.randrange(3)
+            B.Fart-=random.randrange(3)
+            B.Poo-=random.randrange(3)
+            print('保持身體好，天天都美好!')
+        if B.Poo<0:
+            print('好丟臉喔!竟然便祕死了...')
+            print('死亡時間:',timeString)
+            while True:
+                x+=1
+        elif B.Poo<17:
+            print('我快拉出來了!!趕快讓我解放!!')
+        else:
+            print('腸胃清的好，快樂又逍遙!')
+    def poo(self):
+        if B.Eat<0:
+            print('再不讓我吃阿!!腰腰死了齁')
+            print('死亡時間:',timeString)
+            while True:
+                x+=1
+        elif B.Eat<17:
+            print('我好餓喔!該給我吃東西了吧!')
+        else:
+            print('吃飽了~~舒服><')
+        if B.Sleep<0:
+            print('在不讓我睡啊!死了齁')
+            print('死亡時間:',timeString)
+            while True:
+                x+=1
+        elif B.Sleep<20:
+            print('好想睡喔~~趕快讓我睡覺吧')
+        else:
+            print('睡得很飽歐!又有精神了!')
+        if B.Play<0:
+            print('再不陪我玩啊!!害我得抑鬱症死了..')
+            print('死亡時間:',timeString)
+            while True:
+                x+=1
+        elif B.Play<17:
+            print('我.好.無.聊，陪我玩!')
+        else :
+            print('謝謝你陪我玩~我很開心喔!')
+        if B.Love<0:
+            print('被甩了..好難過..毀滅吧..')
+            print('死亡時間:',timeString)
+            while True:
+                x+=1
+        elif B.Love<17:
+            print('我想讓那頭母雞下蛋~~')
+        else:
+            print('YA!我成功讓她下蛋了')
+        if B.Pee<0:
+            print('在不讓我尿啊!!害我膀胱發炎死了齁')
+            print('死亡時間:',timeString)
+            while True:
+                x+=1
+        elif B.Pee<17:
+            print('我想尿尿，趕快帶我上廁所!')
+        else:
+            print('我不想尿尿~~')
+        if B.Fart<0:
+            print('你為什麼不讓我放屁!害我脹死了...')
+            print('死亡時間:',timeString)
+            while True:
+                x+=1
+        elif B.Fart<17:
+            print('大哥!我想放屁，該放一下了吧!')
+        else :
+            print('保持身體好，天天都美好!')
+        if B.Poo<0:
+            print('好丟臉喔!竟然便祕死了...')
+            print('死亡時間:',timeString)
+            while True:
+                x+=1
+        elif B.Poo<17:
+            B.Eat-=random.randrange(2,8)
+            B.Sleep-=random.randrange(2,8)
+            B.Play-=random.randrange(2,8)
+            B.Love-=random.randrange(2,8)
+            B.Pee-=random.randrange(2,8)
+            B.Fart-=random.randrange(2,8)
+            B.Poo+=15
+            print('腸胃清的好，快樂又逍遙!')
+        else:
+            B.Eat-=random.randrange(3)
+            B.Sleep-=random.randrange(3)
+            B.Play-=random.randrange(3)
+            B.Love-=random.randrange(3)
+            B.Pee-=random.randrange(3)
+            B.Fart-=random.randrange(3)
+            B.Poo-=random.randrange(3)
+            print('腸胃清的好，快樂又逍遙!')
+        
+print('10912137 吳健銘, 10912138 游士緯, 10912142 王子誠')       
+print('各位大朋友小朋友們，我們設計的一款電子雞遊戲')
+print('希望大家能照顧好這隻可愛的雞呦')
+print('以下是指令；')
+print('吃飯:  B.eat()')
+print('睡覺:  B.sleep()')
+print('玩樂:  B.play()')
+print('感情:  B.love)')
+print('尿尿:  B.pee()')
+print('放屁:  B.fart()')
+print('大便:  B.poo()')
+print('..................')
+print('..................')
+print('..................')
+print('....遊戲開始吧~...')
+print('')
+Q=random.randrange(10,25)
+W=random.randrange(10,25)
+E=random.randrange(10,25)
+R=random.randrange(10,25)
+T=random.randrange(10,25)
+Y=random.randrange(10,25)
+U=random.randrange(10,25)
+B=Cat(Q,W,E,R,T,Y,U)
+Time=(time.time())
+if B.Eat<0:
+    print('再不讓我吃阿!!腰腰死了齁')
+    while True:
+                x+=1
+elif B.Eat<17:
+    print('我好餓喔!該給我吃東西了吧!')
+else:
+    print('吃飽了~~舒服><')
+if B.Sleep<0:
+    print('在不讓我睡啊!死了齁')
+    while True:
+                x+=1
+elif B.Sleep<17:
+    print('好想睡喔~~趕快讓我睡覺吧')
+else:
+    print('睡得很飽歐!又有精神了!')
+if B.Play<0:
+    print('再不陪我玩啊!!害我得抑鬱症死了..')
+    while True:
+             x+=1   
+elif B.Play<17:
+    print('我.好.無.聊，陪我玩!')
+else :
+    print('謝謝你陪我玩~我很開心喔!')
+if B.Love<0:
+    print('被甩了..好難過..毀滅吧..')
+    while True:
+                x+=1
+elif B.Love<17:
+    print('我想讓那頭母雞下蛋~~')
+else:
+    print('YA!我成功讓她下蛋了')
+if B.Pee<0:
+    print('在不讓我尿啊!!害我膀胱發炎死了齁')
+    while True:
+                x+=1
+elif B.Pee<17:
+    print('我想尿尿，趕快帶我上廁所!')
+else:
+    print('我不想尿尿~~')
+if B.Fart<0:
+    print('你為什麼不讓我放屁!害我脹死了...')
+    while True:
+                x+=1
+elif B.Fart<17:
+    print('大哥!我想放屁，該放一下了吧!')
+else :
+    print('保持身體好，天天都美好!')
+if B.Poo<0:
+    print('好丟臉喔!竟然便祕死了...')
+    while True:
+                x+=1
+elif B.Poo<17:
+    print('我快拉出來了!!趕快讓我解放!!')
+else:
+    print('腸胃清的好，快樂又逍遙!')
